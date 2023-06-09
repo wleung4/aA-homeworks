@@ -1,5 +1,4 @@
 class Stack # Last in first out
-	attr_reader :stack
 	def initialize
 	  # create ivar to store stack here!
 	  @stack = []
@@ -7,17 +6,17 @@ class Stack # Last in first out
   
 	def push(el)
 	  # adds an element to the stack
-	  self.stack.push(el)
+	  @stack.push(el)
 	end
   
 	def pop
 	  # removes one element from the stack
-	  self.stack.pop
+	  @stack.pop
 	end
   
 	def peek
 	  # returns, but doesn't remove, the top element in the stack
-	  self.stack.last
+	  @stack.last
 	end
 end
 
