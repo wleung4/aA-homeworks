@@ -24,9 +24,9 @@ class Simon
   def take_turn
 	self.show_sequence
 	self.require_sequence
-	while !@game_over
+	if !@game_over
 		self.round_success_message
-		sequence_length += 1
+		@sequence_length += 1
 	end
   end
 
